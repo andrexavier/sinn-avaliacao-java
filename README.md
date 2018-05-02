@@ -27,11 +27,14 @@ http://localhost:8080/avaliacao-entrevista-java/
 Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já pode iniciar as atividades.
 
 
-## Atividades
+## Exercícios
 
- - Criar uma tabela de clubes no componente Clubes
- - Exibir o escudo, nome, e posição dos times
- - Ordenação padrão pela posição
+### Etapa 1
+
+ - Crie POJOs para mapear as tabelas "empresas", "cargos" e "pessoas";
+ - Implemente um serviço para buscar uma lista destes objetos;
+ - Implemente um serviço para inserir cada um desses objetos;
+ - Crie Controllers
  - Não exibir o time caso ele não possua posição
  - Filtrar tabela de Clubes pelo campo nome do time e posição
  - Exibir um contador na tela inicial do tempo restante para o fechamento da rodada
@@ -39,8 +42,3 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
 
  - **EXTRA**
  - Criar componente de Próxima Rodada exibindo o escudo + abreviacao do Time Mandante X escudo + abreviacao do Time Visitante
-
-## APIs Necessárias
-
- - Para exibição dos clubes: https://api.cartolafc.globo.com/clubes
- -  Para exibição da próxima rodada: https://api.cartolafc.globo.com/partidas
