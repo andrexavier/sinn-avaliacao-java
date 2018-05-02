@@ -3,9 +3,11 @@
 ## Pré-requisitos
 
 Você vai precisar do Eclipse instalado na sua máquina:
+
 https://www.eclipse.org/downloads/
 
-Você também vai precisar da JDK do Java 1.8
+Você também vai precisar da JDK do Java 1.8:
+
 http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
 
   
@@ -19,9 +21,10 @@ Clique com o boto direito no projeto, vá em "Run As" e clique em "Maven clean".
 ## Deploying
 
 Pegue o .war do projeto e coloque dentro de um container de sua preferência. Suba o servidor e entre na seguinte url:
+
 http://localhost:8080/avaliacao-entrevista-java/
 
-Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já pode iniciar as atividades
+Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já pode iniciar as atividades.
 
 
 ## Atividades
