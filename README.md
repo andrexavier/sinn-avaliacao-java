@@ -77,5 +77,12 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
 
  - Faça uma verificação server-side dos dados informados nos campos de cpf e cnpj e impeça a continuidade do processo caso haja valores indevidos nestes campos;
  
+ ### Extra
  
- Realize as tarefas acima na sua própria máquina. Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto.
+ Utilize recursos do Java como herança e polimorfismo para otimizar a implementação destes códigos. Se souber, aplique também design patterns onde julgar aplicável.
+ 
+ ## Orientações finais
+ 
+ - Realize as tarefas acima na sua própria máquina;
+ - Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto;
+ - Commite todo o código que você desenvolver no repositório do seu projeto.
