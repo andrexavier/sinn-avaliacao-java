@@ -12,7 +12,7 @@ http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-213315
 
 ## Instalando dependências
 
-Clique com o boto direito no projeto, vá em "Run As" e clique em "Maven clean". Em seguida faça o mesmo processo, mas desta vez clique em "Maven install".
+Clique com o boto direito no projeto, vá em "Run As" e clique em "Maven clean". Em seguida faça quase o mesmo processo, mas desta vez clique em "Maven install".
 
   
 
