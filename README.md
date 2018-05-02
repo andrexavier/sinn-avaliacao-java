@@ -15,7 +15,7 @@ Instale o PostgreSQL como banco de dados a ser usado:
 https://www.postgresql.org/download/
 
 
-Você pode utilizar tanto uma interface de gerenciamento como o PgAdmin como o próprio terminal para realizar as operaçes na base.
+Você pode utilizar tanto uma interface de gerenciamento (PgAdmin, por exemplo) como o próprio terminal para realizar as operaçes na base.
 
   
 
