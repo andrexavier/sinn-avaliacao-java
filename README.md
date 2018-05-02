@@ -31,6 +31,18 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
 
 ### Etapa 1
 
+ - Elabore a modelagem das tabelas dos seguintes objetos: Empresa, Cargo e Pessoa;
+ - A Empresa deve ter os seguintes campos:
+    - nome da empresa;
+    - cnpj;
+    - dono da empresa.
+ - O Cargo deve ter o seguinte campo:
+    - nome do cargo.
+ - A Pessoa deve ter os seguintes campos:
+    - nome da pessoa;
+    - cpf;
+    - cargo.
+
  - Crie POJOs para mapear as tabelas "empresas", "cargos" e "pessoas";
  - Implemente um serviço para buscar uma lista destes objetos;
  - Implemente um serviço para inserir cada um desses objetos;
