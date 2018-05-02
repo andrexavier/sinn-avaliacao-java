@@ -18,7 +18,7 @@ Clique com o boto direito no projeto, vá em "Run As" e clique em "Maven clean".
 
 ## Deploying
 
-Pegue o .war do projeto e coloque dentro de um container da sua preferência. Suba o servidor e entre na seguinte url:
+Pegue o .war do projeto e coloque dentro de um container de sua preferência. Suba o servidor e entre na seguinte url:
 http://localhost:8080/avaliacao-entrevista-java/
 
 Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já pode iniciar as atividades
