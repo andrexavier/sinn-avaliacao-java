@@ -49,11 +49,11 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - nome da pessoa;
     - cpf;
     - cargo;
-    - salário.
+    - salário.
     
  Importante: 
  - A tabela Cargo deve ter, obrigatóriamente, os seguintes valores:
-    - Estagiário;
+    - Estagiário;
     - Gerente;
     - Diretor.
  
