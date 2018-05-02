@@ -69,8 +69,11 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  
  ### Etapa 3
  
- - Implemente as seguintes regras de negócios para este sistema:
-    - Faça um serviço que atualize o salários das pessoas, multiplicando
+ Implemente as seguintes regras de negócios para este sistema:
+ - Faça um serviço que atualize o salários das pessoas, aumentando o salário do:
+    - estagiário em 10%; 
+    - gerente em 20%;
+    - diretor em 35%.
 
  - **EXTRA**
  - Criar componente de Próxima Rodada exibindo o escudo + abreviacao do Time Mandante X escudo + abreviacao do Time Visitante
