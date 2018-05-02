@@ -50,6 +50,11 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - cpf;
     - cargo;
     - salário.
+    
+  - Importante: a tabela Cargo deve ter, obrigatóriamente, os seguintes valores:
+      - Estagiário;
+      - Gerente;
+      - Diretor.
  
  ### Etapa 2
 
@@ -63,7 +68,8 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  
  ### Etapa 3
  
- - Implemente as seguintes regras
+ - Implemente as seguintes regras de negócios para este sistema:
+    - Faça um serviço que atualize o salários das pessoas, multiplicando
 
  - **EXTRA**
  - Criar componente de Próxima Rodada exibindo o escudo + abreviacao do Time Mandante X escudo + abreviacao do Time Visitante
