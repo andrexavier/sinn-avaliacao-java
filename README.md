@@ -10,6 +10,13 @@ Você também vai precisar da JDK do Java 1.8:
 
 http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
 
+Instale o PostgreSQL como banco de dados a ser usado:
+
+https://www.postgresql.org/download/
+
+
+Você pode utilizar tanto uma interface de gerenciamento como o PgAdmin como o próprio terminal para realizar as operaçes na base.
+
   
 
 ## Instalando dependências
@@ -42,6 +49,8 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - nome da pessoa;
     - cpf;
     - cargo.
+    
+ Você pode realizar as tarefas acima na sua própria máquina
 
  - Crie POJOs para mapear as tabelas "empresas", "cargos" e "pessoas";
  - Implemente um serviço para buscar uma lista destes objetos;
