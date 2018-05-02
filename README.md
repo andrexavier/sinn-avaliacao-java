@@ -48,7 +48,8 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  - A Pessoa deve ter os seguintes campos:
     - nome da pessoa;
     - cpf;
-    - cargo.
+    - cargo;
+    - salário.
  
  ### Etapa 2
 
@@ -56,9 +57,13 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  - Implemente um serviço para cada um destes objetos que busque e retorne uma lista deles;
  - Implemente um serviço para cada um destes objetos que os insira na base;
  - Implemente um serviço para cada um destes objetos que faça uma deleção lógica deles;
- - Crie as Controllers de acesso aos recursos de cada um destes objetos;
+ - Crie as Controllers de acesso aos recursos de cada um destes objetos.
  
  Dica: você pode alterar a estrutura da tabela criada anteriormente se julgar necessário, com base nas tarefas da etapa 2.
+ 
+ ### Etapa 3
+ 
+ - Implemente as seguintes regras
 
  - **EXTRA**
  - Criar componente de Próxima Rodada exibindo o escudo + abreviacao do Time Mandante X escudo + abreviacao do Time Visitante
