@@ -75,7 +75,7 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - gerente em 20%;
     - diretor em 35%.
 
- - **EXTRA**
- - Criar componente de Próxima Rodada exibindo o escudo + abreviacao do Time Mandante X escudo + abreviacao do Time Visitante
+ - Verifique os dados informados no campo de cpf e cnpj e impeça a continuidade do processo caso haja valores indevidos nestes campos;
+ 
  
  Realize as tarefas acima na sua própria máquina. Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto.
