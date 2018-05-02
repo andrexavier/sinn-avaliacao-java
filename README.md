@@ -51,10 +51,10 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - cargo;
     - salário.
     
-  - Importante: a tabela Cargo deve ter, obrigatóriamente, os seguintes valores:
-      - Estagiário;
-      - Gerente;
-      - Diretor.
+ - Importante: a tabela Cargo deve ter, obrigatóriamente, os seguintes valores:
+     - Estagiário;
+     - Gerente;
+     - Diretor.
  
  ### Etapa 2
 
