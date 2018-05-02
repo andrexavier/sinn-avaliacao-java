@@ -50,9 +50,11 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - cpf;
     - cargo.
     
- Você pode realizar as tarefas acima na sua própria máquina
+ Realize as tarefas acima na sua própria máquina. Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto.
+ 
+ ### Etapa 2
 
- - Crie POJOs para mapear as tabelas "empresas", "cargos" e "pessoas";
+ - Crie POJOs para mapear as tabelas criadas anteriormente;
  - Implemente um serviço para buscar uma lista destes objetos;
  - Implemente um serviço para inserir cada um desses objetos;
  - Crie Controllers
