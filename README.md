@@ -49,19 +49,18 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - nome da pessoa;
     - cpf;
     - cargo.
-    
- Realize as tarefas acima na sua própria máquina. Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto.
  
  ### Etapa 2
 
  - Crie POJOs para mapear as tabelas criadas anteriormente;
- - Implemente um serviço para buscar uma lista destes objetos;
- - Implemente um serviço para inserir cada um desses objetos;
- - Crie Controllers
- - Não exibir o time caso ele não possua posição
- - Filtrar tabela de Clubes pelo campo nome do time e posição
- - Exibir um contador na tela inicial do tempo restante para o fechamento da rodada
- - Se a rodada estiver acabada, não deixar entrar na tela de Clubes
+ - Implemente um serviço para cada um destes objetos que busque e retorne uma lista deles;
+ - Implemente um serviço para cada um destes objetos que os insira na base;
+ - Implemente um serviço para cada um destes objetos que faça uma deleção lógica deles;
+ - Crie as Controllers de acesso aos recursos de cada um destes objetos;
+ 
+ Dica: você pode alterar a estrutura da tabela criada anteriormente se julgar necessário, com base nas tarefas da etapa 2.
 
  - **EXTRA**
  - Criar componente de Próxima Rodada exibindo o escudo + abreviacao do Time Mandante X escudo + abreviacao do Time Visitante
+ 
+ Realize as tarefas acima na sua própria máquina. Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto.
