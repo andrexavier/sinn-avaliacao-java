@@ -139,11 +139,11 @@
 
 		<!-- SQL -->
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.4.1207.jre7</version>
-			<scope>test</scope>
+		    <groupId>postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>9.1-901-1.jdbc4</version>
 		</dependency>
+
 
 		<!-- Javax -->
 		<dependency>
