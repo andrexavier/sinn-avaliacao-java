@@ -2,7 +2,7 @@
 
 ## Pré-requisitos
 
-Você vai precisar do Eclipse instalado na sua máquina:
+Você vai precisar do Eclipse instalado na sua máquina ou outra IDE de sua preferência:
 
 https://www.eclipse.org/downloads/
 
@@ -15,19 +15,22 @@ Instale o PostgreSQL como banco de dados a ser usado:
 https://www.postgresql.org/download/
 
 
-Você pode utilizar tanto uma interface de gerenciamento (PgAdmin, por exemplo) como o próprio terminal para realizar as operaçes na base.
-
+Você pode utilizar uma interface de gerenciamento de banco de dados(PgAdmin, por exemplo).
   
 
-## Instalando dependências
+## Tecnologias utilizadas
 
-Clique com o boto direito no projeto, vá em "Run As" e clique em "Maven clean". Em seguida faça quase o mesmo processo, mas desta vez clique em "Maven install".
-
+- Java 8
+- Maven
+- Spring Framework
+- JPA, Hibernate
+- Spring Data
+- PostgreSQL
   
 
 ## Deploying
 
-Pegue o .war do projeto e coloque dentro de um container de sua preferência. Suba o servidor e entre na seguinte url:
+Pegue o .war do projeto e coloque dentro de um servidor de aplicação(tomcat, jetty, wildfly) de sua preferência. Suba o servidor e entre na seguinte url:
 
 http://localhost:8080/avaliacao-entrevista-java/
 
@@ -35,6 +38,8 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
 
 
 ## Exercícios
+
+- Na Etapa 2, as Controllers devem ser REST API. Você pode testar as api's utilizando o Restlet Client do Chrome.
 
 ### Etapa 1
 
@@ -59,10 +64,10 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  
  ### Etapa 2
 
- - Crie POJOs para mapear as tabelas criadas anteriormente;
- - Implemente um serviço para cada um destes objetos que busque e retorne uma lista deles;
+ - Crie POJOs para mapear as tabelas criadas anteriormente; 
  - Implemente um serviço para cada um destes objetos que os insira na base;
- - Implemente um serviço para cada um destes objetos que faça uma deleção lógica deles;
+ - Implemente um serviço para cada um destes objetos que faça uma delete lógico deles;
+ - Implemente um serviço para cada um destes objetos que busque e retorne uma lista deles, sem os deletados;
  - Crie as Controllers de acesso aos recursos de cada um destes objetos.
  
  Dica: você pode alterar a estrutura da tabela criada anteriormente se julgar necessário, com base nas tarefas da etapa 2.
@@ -70,19 +75,18 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  ### Etapa 3
  
  Implemente as seguintes regras de negócios para este sistema:
- - Faça um serviço que atualize o salários das pessoas, aumentando o salário do:
+ - Faça um serviço(REST API) que atualize o salários das pessoas, aumentando o salário do: 
     - estagiário em 10%; 
     - gerente em 20%;
     - diretor em 35%.
-
- - Faça uma verificação server-side dos dados informados nos campos de cpf e cnpj e impeça a continuidade do processo caso haja valores indevidos nestes campos;
+ E que retorne o novo e o antigo.
  
  ### Extra
  
  Utilize recursos do Java como herança e polimorfismo para otimizar a implementação destes códigos. Se souber, aplique também design patterns onde julgar aplicável.
  
  ## Orientações finais
- 
+  
  - Realize as tarefas acima na sua própria máquina;
  - Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto;
  - Commite todo o código que você desenvolver no repositório do seu projeto.
