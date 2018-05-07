@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = {"br.com.sinn"})
+@EnableJpaRepositories(basePackages = {"br.com.sinn"}, entityManagerFactoryRef = "entityManagerFactory")
 @PropertySource(value = "classpath:application.properties")
 public class AvaliacaoEntrevistaJavaDBConfig {
 
@@ -30,7 +30,7 @@ public class AvaliacaoEntrevistaJavaDBConfig {
 	private Environment environment;
 	
 	@Bean
-	public LocalContainerEntityManagerFactoryBean audespEntityManager() {
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
 		em.setPackagesToScan(new String[] {"br.com.sinn"});
