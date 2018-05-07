@@ -30,6 +30,8 @@ Você pode utilizar uma interface de gerenciamento de banco de dados(PgAdmin, po
 
 ## Deploying
 
+Ajuste as configurações do banco de dados em: /src/main/resources/application.properties
+
 Pegue o .war do projeto e coloque dentro de um servidor de aplicação(tomcat, jetty, wildfly) de sua preferência. Suba o servidor e entre na seguinte url:
 
 http://localhost:8080/avaliacao-entrevista-java/
