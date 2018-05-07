@@ -21,7 +21,7 @@ public class AvaliacaoEntrevistaJavaAppInitializer extends AbstractAnnotationCon
 	
 	@Override
 	protected String[] getServletMappings() {
-		return new String[]{"/v1.0/*"};
+		return new String[]{"/*"};
 	}
 
 }
