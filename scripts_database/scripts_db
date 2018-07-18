@@ -1,0 +1,22 @@
+Como Trabalho com a abordagem Code First, não crio tabelas, 
+nem campos. Deixo o hibernate fazer esse serviço por mim.
+Também não vou muito com a cara do postgres, então o unico trabalho
+que tive, foi logar como usuario postgres e mandar o seguinte comando:
+
+$ createdb -U tm7 sinn
+
+Pra isso não ficar só texto, sem fundamento, depois de criar a aplicação,
+também inseri na entidade cargo, os valores que o teste propõe como 
+obrigatórios, com um curl maroto, dessa forma:
+
+curl \
+	-d '{"nome":"estagiario"}' \
+	-H "Content-Type: application/json"
+	-X POST http://localhost:9999/cargos
+
+Onde só mudei o valor da propriedade nome, pra gerente e diretor, depois de
+inserir o estagiario...
+Por falar em Curl, esta aplicação foi feita com maven spring, jpa, 
+hibernate, postgres, vim, rodei com o mvn spring-boot:run, e manipulei
+com o curl. Se você testar com qualquer coisa diferente disso não me 
+responsabilizo kkkk
