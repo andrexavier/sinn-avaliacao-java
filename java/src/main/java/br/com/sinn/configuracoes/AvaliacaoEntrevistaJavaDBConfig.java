@@ -13,8 +13,8 @@ import org.springframework.core.env.Environment;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = {"br.com.sinn"}, entityManagerFactoryRef = "entityManagerFactory")
+@EnableJpaRepositories(basePackages = {"br.com.sinn.repository"}, entityManagerFactoryRef = "entityManagerFactory")
 @PropertySource(value = "classpath:application.properties")
 public class AvaliacaoEntrevistaJavaDBConfig {
 
@@ -33,7 +33,7 @@ public class AvaliacaoEntrevistaJavaDBConfig {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
-		em.setPackagesToScan(new String[] {"br.com.sinn"});
+		em.setPackagesToScan(new String[] {"br.com.sinn.model"});
 
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		em.setJpaVendorAdapter(vendorAdapter);
@@ -54,9 +54,8 @@ public class AvaliacaoEntrevistaJavaDBConfig {
 
 	@Bean
 	@Autowired
-	public HibernateTransactionManager transactionManager(SessionFactory s) {
-		HibernateTransactionManager txManager = new HibernateTransactionManager();
-		txManager.setSessionFactory(s);
+	public JpaTransactionManager transactionManager(SessionFactory s) {
+		JpaTransactionManager txManager = new JpaTransactionManager();
 		return txManager;
 	}
 
