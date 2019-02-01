@@ -23,6 +23,7 @@ Você pode utilizar uma interface de gerenciamento de banco de dados(PgAdmin, po
 - Java 8
 - Maven
 - Spring Framework
+- JUnit 4
 - JPA, Hibernate
 - Spring Data
 - PostgreSQL
@@ -42,21 +43,36 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
 ## Exercícios
 
 - Na Etapa 2, as Controllers devem ser REST API. Você pode testar as api's utilizando o Restlet Client do Chrome.
+- Escreva testes de unidade ( unit tests ), utilizando JUnit 4.
 
 ### Etapa 1
 
- - Elabore a modelagem das tabelas dos seguintes objetos: Empresa, Cargo e Pessoa;
+ - Elabore a modelagem das tabelas dos seguintes objetos: Empresa, Cargo, Funcionário, Adiantamento e Parcela;
  - A Empresa deve ter os seguintes campos:
-    - nome da empresa;
-    - cnpj;
-    - dono da empresa.
+    - Nome;
+    - CNPJ;
+    - Dono da empresa.
  - O Cargo deve ter o seguinte campo:
-    - nome do cargo.
- - A Pessoa deve ter os seguintes campos:
-    - nome da pessoa;
-    - cpf;
-    - cargo;
-    - salário.
+    - Dome do cargo.
+ - O Funcionário deve ter os seguintes campos:
+    - Nome;
+    - CPF;
+    - Cargo;
+    - Salário.
+ - Adiantamento deve possuir os seguintes campos:
+    - Funcionário
+    - Valor
+    - Data Adiantamento
+    - Data Devolução Total
+    - Parcelado
+    - Numero de Parcelas
+    - Quitado
+    - Valor a ser devolvido
+ - Parcela deve ter os seguintes campos:
+    - Adiantamento
+    - Valor Parcela
+    - Data Pagamento
+    - Pago
     
  Importante: 
  - A tabela Cargo deve ter, obrigatoriamente, os seguintes valores:
@@ -83,6 +99,17 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
     - diretor em 35%.
  E que retorne o novo e o antigo.
  
+ ### Etapa 4
+
+ Implemente as seguintes regras e funcionalidades:
+ - Possibilidade de um Funcionário solicitar um adiantamento, as seguintes regras deverão ser aplicadas:
+    - Possibilidade de Parcelar um Adiantamento
+    - Em caso de valores inferiores a 500,00 deverá ser aplicada uma taxa de juros de 15% a.m. para pagamentos a vista, e 20% a.m. para pagamentos parcelados.
+    - Em caso de valores superiores a 500,00 deverá ser aplicada uma taxa de juros de 13% a.m. para pagamentos a vista, e 18% a.m. para pagamentos parcelados.
+    - Em caso de adiantamento parcelado, gerar as parcelas com base na taxa de juros acima.
+    - Calcular quanto será devolvido para a empresa.
+    - Possibilitar a devolução do adiantamento para a empresa em menos de 1 mês, apenas para devoluções do valor total ( calcular o juros que serão pagos, conforme a quantidade de dias utilizados. )
+
  ### Extra
  
  Utilize recursos do Java como herança e polimorfismo para otimizar a implementação destes códigos. Se souber, aplique também design patterns onde julgar aplicável.
