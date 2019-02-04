@@ -1,5 +1,7 @@
 # sinn-avaliacao-java
 
+As etapas não são eliminatorias, faça até onde conseguir. 
+
 ## Pré-requisitos
 
 Você vai precisar do Eclipse instalado na sua máquina ou outra IDE de sua preferência:
@@ -43,7 +45,7 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
 ## Exercícios
 
 - Na Etapa 2, as Controllers devem ser REST API. Você pode testar as api's utilizando o Restlet Client do Chrome.
-- Escreva testes de unidade ( unit tests ), utilizando JUnit 4.
+- Testes de unidade ( unit tests ), utilizando JUnit 4, são um diferencial. 
 
 ### Etapa 1
 
@@ -119,3 +121,5 @@ Se aparecer uma mensagem na tela dizendo "O PROJETO ESTÁ RODANDO!", você já p
  - Realize as tarefas acima na sua própria máquina;
  - Pegue o script de geração das tabelas e os coloque na pasta "scripts_database" que está neste projeto;
  - Commite todo o código que você desenvolver no repositório do seu projeto.
+ - Utilizar Gitflow será um diferencial. 
+ 
